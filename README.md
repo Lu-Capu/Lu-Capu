@@ -46,3 +46,10 @@ I am an undergraduate Computer science and Engineering student at IIIT-Hyderabad
   <img src="https://img.shields.io/badge/Xampp-F37623?style=for-the-badge&logo=xampp&logoColor=white">
   <img src="https://img.shields.io/badge/drawio-%23F08705.svg?style=for-the-badge&logo=diagrams.net&logoColor=white">
 </span>
+
+<div align="center">
+<h2 align="center" style="margin: 5px 10px;">Github stats:</h2> 
+
+[![](https://github-readme-stats.vercel.app/api?username=Lu-Capu&show_icons=true&theme=tokyonight&hide_border=true&locale=en)](https://github.com/Lu-Capu)
+[![](https://github-readme-streak-stats.herokuapp.com/?user=Lu-Capu&theme=material-palenight)](https://github.com/Lu-Capu)
+</div>
