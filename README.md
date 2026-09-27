@@ -5,7 +5,9 @@
   <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=Computer+Science+Student;Fronted+Web+Developer;Freelancer;DS%20|%20AI%20|%20ML%20Enthusiastic;Always%20learning%20new%20things&center=true&width=380&height=45"></a>
 </p>
 
-<img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="30px">&nbsp;***About me***
+
+<picture><img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width = 30px></picture> About me
+
 I am a Systems Engineering undergraduate student. I am proficient in programming languages ​​such as Java, JavaScript, HTML, CSS, and SQL. I am passionate about learning and creating new things that are productive, innovative, and creative.
 
 * **I am interested in Web designing, Android development, and digital marketing**
