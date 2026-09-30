@@ -2,7 +2,7 @@
 <img align="right" width=200px alt="Kirby" src="https://media.tenor.com/nKHedSUntMwAAAAM/kirby.gif" />
 
 <p align="center">
-  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=Fronted+Web+Developer;DS%20|%20AI%20|%20ML%20Enthusiastic;Always%20learning%20new%20things&center=true&width=380&height=45"></a>
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=Fronted+Web+Developer;Enthusiastic;Always%20learning%20new%20things&center=true&width=380&height=45"></a>
 </p>
 
 
