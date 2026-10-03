@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Lu-Capu/04-To-Do_List"><img src="https://img.shields.io/badge/Portafolio-4%20proyectos%20publicados-61DAFB?style=flat-square" alt="Portafolio"></a>
+  <a href="https://github.com/Lu-Capu/04-To-Do_List"><img src="https://img.shields.io/badge/Portafolio-6%20proyectos%20publicados-61DAFB?style=flat-square" alt="Portafolio"></a>
   <a href="mailto:sebastianvilchez44@gmail.com"><img src="https://img.shields.io/badge/Email-sebastianvilchez44@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
 
@@ -72,8 +72,13 @@ binario propio.
 
 ### [Python-Ejercicios](https://github.com/Lu-Capu/Python-Ejercicios)
 
-12 ejercicios en Python ordenados por dificultad, con Tkinter y una
-calculadora. Ejercicios de logica y algoritmos del curso.
+14 ejercicios en Python ordenados por dificultad. Los de Tkinter son los que
+más interesa mirar:
+
+- **[Calculadora](https://github.com/Lu-Capu/Python-Ejercicios/tree/main/21-Calculadora)** — los botones no calculan por separado, van escribiendo la expresión en una etiqueta y el `=` la resuelve con `eval`. Multiplicar sale como `x` y se cambia por `*` antes de pasarle el texto.
+- **[Gestor de usuarios](https://github.com/Lu-Capu/Python-Ejercicios/tree/main/23-GestorBD)** — CRUD sobre SQLite, repartido en `database.py`, `config.py`, `textos.py` y `ui/`. El módulo de datos no importa Tkinter, así que se puede probar sin abrir la ventana.
+
+El resto son ejercicios de lógica y algoritmos del curso.
 
 ![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
 
