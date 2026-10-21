@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Lu-Capu/04-To-Do_List"><img src="https://img.shields.io/badge/Portafolio-6%20proyectos%20publicados-61DAFB?style=flat-square" alt="Portafolio"></a>
+  <a href="https://github.com/Lu-Capu?tab=repositories"><img src="https://img.shields.io/badge/Portafolio-7%20proyectos-61DAFB?style=flat-square" alt="Portafolio"></a>
   <a href="mailto:sebastianvilchez44@gmail.com"><img src="https://img.shields.io/badge/Email-sebastianvilchez44@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
 
@@ -13,18 +13,19 @@
 
 ## Sobre mí
 
-Trabajo en el lado web: React para lo que se ve en el navegador y Java cuando
-el proyecto necesita Swing y base de datos. Me interesa sobre todo la parte
-que casi nadie muestra, que es hacer que algo funcione cuando el navegador se
-pone en contra: sin permiso de notificaciones, en contexto no seguro, con la
-pestaña en segundo plano.
+Trabajo en el lado web: React para lo que se ve en el navegador, Python con
+Flet cuando la misma interfaz tiene que correr en escritorio y en la web, y
+Java cuando el proyecto necesita Swing y base de datos. Me interesa sobre todo
+la parte que casi nadie muestra, que es hacer que algo funcione cuando el
+navegador se pone en contra: sin permiso de notificaciones, en contexto no
+seguro, con la pestaña en segundo plano, o sin backend detrás.
 
-Este repositorio es mi portafolio. Abajo está lo que hice, con los repos
-completos por si quieres ver el código.
+Este repositorio es mi portafolio. Abajo está lo que hice, con los repos y
+demos por si quieres verlos funcionando.
 
 ---
 
-## ⭐ Proyecto principal
+## ⭐ Proyectos principales
 
 <a href="https://github.com/Lu-Capu/04-To-Do_List">
   <img src="https://img.shields.io/badge/Lista%20de%20Tareas-React%2019%20·%20Vite%20·%20PWA-61DAFB?style=flat-square" alt="Lista de Tareas">
@@ -55,6 +56,44 @@ Lo interesante del proyecto está en cómo resuelve los recordatorios:
 - **PWA de verdad:** Workbox con `autoUpdate`, manifiesto e iconos 192/512.
 
 [**Ver código →**](https://github.com/Lu-Capu/04-To-Do_List)
+
+---
+
+<a href="https://gestorgastos-fronted.vercel.app/">
+  <img src="https://img.shields.io/badge/Gestor%20de%20Gastos-Python%20·%20Flet%20·%20Supabase-3FCF8E?style=flat-square" alt="Gestor de Gastos">
+</a>
+
+### [Gestor de Gastos · Python + Supabase](https://gestorgastos-fronted.vercel.app/)
+
+Registro de gastos y categorías con login propio, resumen del mes y gráfica de
+dona. El mismo código Python corre como app de escritorio y como sitio web:
+en el navegador se compila con Pyodide y se despliega en Vercel. No hay
+backend propio: el cliente habla directo con Supabase Auth y PostgREST.
+
+![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
+![Flet](https://img.shields.io/badge/Flet-0175C2?style=flat-square)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+Lo interesante del proyecto está en cómo sostiene dos plataformas con una sola
+base de código:
+
+- **Un transporte HTTP, dos mundos:** `requests` en escritorio y
+  `XMLHttpRequest` síncrono en el navegador, porque Pyodide no trae `requests`.
+  El cliente Supabase elige en runtime cuál usar.
+- **Sin backend propio:** Auth + PostgREST desde el cliente. Lo único que
+  viaja es la anon key, que solo sirve encima de RLS.
+- **RLS como única capa de seguridad:** la política `propietario` compara
+  `auth.uid() = usuario_id` en `SELECT`, `INSERT`, `UPDATE` y `DELETE`, y el
+  rol `anon` sin sesión no lee ni escribe. Cada usuario ve solo sus filas.
+- **Gráfica con respaldo:** dona con `flet-charts` en escritorio y barras en
+  Flet puro en web, importado con `try/except` para que el build de Pyodide no
+  se caiga por una dependencia.
+- **Mismo repo, dos destinos:** `iniciar_frontend.bat` arranca el escritorio y
+  Vercel construye el sitio con `flet publish`.
+
+[**Ver demo en vivo →**](https://gestorgastos-fronted.vercel.app/)
+<sub>· el repo `Gestor_Gastos` es privado, el código se comparte a pedido</sub>
 
 ---
 
@@ -103,11 +142,11 @@ La base de la que salieron las dos landings anteriores. BEM, reveal por
 
 ## Stack
 
-**Frontend** — React 19, Vite 8, JavaScript, HTML5, CSS3, `vite-plugin-pwa`
+**Frontend** — React 19, Vite 8, JavaScript, HTML5, CSS3, `vite-plugin-pwa`, Flet (Python)
 
 **Lenguajes** — Java, Python, SQL
 
-**Herramientas** — Apache NetBeans, Visual Studio Code, Git, MySQL, XAMPP, Draw.io
+**Herramientas** — Apache NetBeans, Visual Studio Code, Git, MySQL, XAMPP, Supabase, Vercel, Draw.io
 
 ---
 
